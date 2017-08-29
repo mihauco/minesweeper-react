@@ -1,0 +1,76 @@
+@import './configs/sprites';
+
+.app {
+  background: $itemsBackground;
+  border-top: 2px solid $appBackgroundLight;
+  border-left: 2px solid $appBackgroundLight;
+  border-bottom: 2px solid $appBackgroundDark;
+  border-right: 2px solid $appBackgroundDark;
+  padding: 2px;
+  position: absolute;
+
+  &__top-bar {
+      width: 100%;
+      height: 22px;
+      background: $appBarBackground;
+      color: $fontLight;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding: 0 3px;
+			font-weight: bold;
+  }
+
+  &__menu {
+      padding: 2px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  &__minesweeper-icon {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url($minesweeper_icon);
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      margin-right: 5px;
+  }
+
+	&__game {
+		padding: 5px;
+    background: $itemsBackground;
+    border-top: 3px solid $appBackgroundLight;
+    border-left: 3px solid $appBackgroundLight;
+    border-bottom: 3px solid $appBackgroundDark;
+    border-right: 3px solid $appBackgroundDark;
+	}
+
+	&__game-status-bar {
+		border-bottom: 3px solid $appBackgroundLight;
+		border-right: 3px solid $appBackgroundLight;
+		border-top: 3px solid $appBackgroundDark;
+		border-left: 3px solid $appBackgroundDark;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 5px;
+	}
+
+	&__game-field {
+		&--size-level {
+			&_0 {
+					width: 144px;
+			}
+
+			&_1 {
+					width: 256px;
+			}
+
+			&_2 {
+					width: 480px;
+			}
+		}
+	}
+}

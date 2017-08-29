@@ -1,0 +1,62 @@
+@import '../configs/sprites';
+@import '../configs/colors';
+
+.counter {
+    width: 39px;
+    height: 23px;
+    display: flex;
+
+    &__number {
+        width: 13px;
+        height: 23px;
+        background-color: $darkBackground;
+        background-image: url( $counter_empty );
+        background-size: 13px 23px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--1 {
+            background-image: url( $counter_1 );
+        }
+
+        &--2 {
+            background-image: url( $counter_2 );
+        }
+
+        &--3 {
+            background-image: url( $counter_3 );
+        }
+
+        &--4 {
+            background-image: url( $counter_4 );
+        }
+
+        &--5 {
+            background-image: url( $counter_5 );
+        }
+
+        &--6 {
+            background-image: url( $counter_6 );
+        }
+
+        &--7 {
+            background-image: url( $counter_7 );
+        }
+
+        &--8 {
+            background-image: url( $counter_8 );
+        }
+
+        &--9 {
+            background-image: url( $counter_9 );
+        }
+
+        &--0 {
+            background-image: url( $counter_0 );
+        }
+
+        &--negative {
+            background-image: url( $counter_negative );
+        }
+    }
+}

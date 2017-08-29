@@ -1,0 +1,133 @@
+@import '../configs/sprites';
+
+.game-field {
+		box-sizing: content-box;
+		border-bottom: 3px solid $appBackgroundLight;
+		border-right: 3px solid $appBackgroundLight;
+		border-top: 3px solid $appBackgroundDark;
+		border-left: 3px solid $appBackgroundDark;
+
+	&__fields-row {
+			overflow: hidden;
+	}
+
+	&__field {
+			width: 16px;
+			height: 16px;
+			background: $itemsBackground;
+			border-top: 2px solid $appBackgroundLight;
+			border-left: 2px solid $appBackgroundLight;
+			border-bottom: 2px solid $appBackgroundDark;
+			border-right: 2px solid $appBackgroundDark;
+			float: left;
+			font-size: 9px;
+			background-size: 12px 12px;
+			background-position: center;
+
+			&--mousedown {
+					border-bottom: 2px solid $appBackgroundLight;
+					border-right: 2px solid $appBackgroundLight;
+					border-top: 2px solid $appBackgroundDark;
+					border-left: 2px solid $appBackgroundDark;
+			}
+
+			&--discoverd {
+					border-top: 1px solid $appBackgroundDark;
+					border-left: 1px solid $appBackgroundDark;
+					border-bottom: none;
+					border-right: none;
+			}
+
+			&--mark {
+					&_1 {
+							background-image: url($flag);
+							background-size: 12px 12px;
+							background-position: center;
+							background-repeat: no-repeat;
+					}
+
+					&_2 {
+							background-image: url($question_mark);
+							background-size: 12px 12px;
+							background-position: center;
+							background-repeat: no-repeat;
+					}
+			}
+
+			&--bomb {
+					background-image: url($bomb);
+					background-size: 13px 13px;
+					background-position: 1px 1px;
+					background-repeat: no-repeat;
+			}
+
+			&--bomb-wrong {
+					background-image: url($bomb_wrong);
+					background-size: 13px 13px;
+					background-position: 1px 1px;
+					background-repeat: no-repeat;
+			}
+
+			&--blow {
+					background-color: $thingsGoneBad;
+			}
+
+			&--num {
+					&_1 {
+							background-image: url( $num_1 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_2 {
+							background-image: url( $num_2 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_3 {
+							background-image: url( $num_3 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_4 {
+							background-image: url( $num_4 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_5 {
+							background-image: url( $num_5 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_6 {
+							background-image: url( $num_6 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_7 {
+							background-image: url( $num_7 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+
+					&_8 {
+							background-image: url( $num_8 );
+							background-size: 15px 15px;
+							background-repeat: repeat;
+							background-position: center;
+					}
+			}
+	}
+}

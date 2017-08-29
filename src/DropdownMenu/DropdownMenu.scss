@@ -1,0 +1,49 @@
+@import '../configs/colors';
+
+.dropdown-menu {
+	font-size: 12px;
+	margin-right: 2px;
+	color: $fontDark;
+	cursor: default;
+	padding: 3px 4px;
+	position: relative;
+
+	&:hover {
+		background: $activeColor;
+		color: $fontLight;
+
+		.dropdown-menu__menu {
+			display: block;
+			border-top: 2px solid $appBackgroundLight;
+			border-left: 2px solid $appBackgroundLight;
+			border-bottom: 2px solid $appBackgroundDark;
+			border-right: 2px solid $appBackgroundDark;
+		}
+	}
+
+	span {
+			text-decoration: underline;
+	}
+
+	&__menu {
+		display: none;
+		position: absolute;
+		background: $itemsBackground;
+		top: 100%;
+		left: 0;
+	}
+
+	&__item {
+		display: block;
+		padding: 3px 5px;
+		color: $fontDark;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+			background: $activeColor;
+			text-decoration: none;
+			color: $fontLight;
+		}
+	}
+}

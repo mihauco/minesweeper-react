@@ -1,0 +1,38 @@
+@import '../configs/sprites';
+@import '../configs/colors';
+
+.face {
+		width: 24px;
+		height: 24px;
+		border-radius: 0;
+		background-color: $itemsBackground;
+		background-image: url( $face_smile );
+		background-repeat: no-repeat;
+		background-size: 17px 17px;
+		background-position: 2px 2px;
+		border-top: 2px solid $appBackgroundLight;
+		border-left: 2px solid $appBackgroundLight;
+		border-bottom: 2px solid $appBackgroundDark;
+		border-right: 2px solid $appBackgroundDark;
+		outline: 1px solid $appBackgroundDark;
+		margin: 1px;
+
+		&--mouse-down {
+				border-bottom: 2px solid $appBackgroundLight;
+				border-right: 2px solid $appBackgroundLight;
+				border-top: 2px solid $appBackgroundDark;
+				border-left: 2px solid $appBackgroundDark;
+		}
+
+		&--dead {
+				background-image: url( $face_dead );
+		}
+
+		&--cool {
+				background-image: url( $face_cool );
+		}
+
+		&--scared {
+				background-image: url( $face_scared );
+		}
+}
