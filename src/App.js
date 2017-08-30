@@ -425,7 +425,7 @@ class App extends Component {
 							menuOptions={[
 								{
 									title: 'Github',
-									link: '#'
+									link: 'https://github.com/noiff/minesweeper-react'
 								}
 							]}
 						/>
